@@ -17,7 +17,7 @@ const LogIn = () => {
             <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
             <label htmlFor="floatingPassword">Password</label>
           </div>
-          <button type="submit" className="btn btn-primary w-100">Login</button>
+          <button type="submit" className="btn-login btn btn-primary w-100">Login</button>
           <p className="mt-3">
             <Link to="/register">Don't have an account? Register here!</Link>
           </p>

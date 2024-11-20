@@ -4,6 +4,7 @@ import Home from './components/Home'
 import LogIn from './components/LogIn';
 import Register from './components/Register';
 
+
 export class App extends Component {
   render() {
     return (
@@ -12,6 +13,7 @@ export class App extends Component {
             <Route exact path="/" element={<Home />} />
             <Route exact path="log-in" element={<LogIn />} />
             <Route exact path="register" element={<Register />} />
+
           </Routes>
         </BrowserRouter>
     );

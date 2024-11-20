@@ -1,34 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import img1 from '../imgs/img1.jpg';
-import './style.css'; 
+import './style.css';
+import Navbar from './Navbar';
 
 const LogIn = () => {
   return (
-    <div className="d-flex vh-100">
-      <div className="login-info-container d-flex flex-column justify-content-center align-items-center bg-light w-50">
-        <div className="login-container text-center p-4">
-          <h2>Login</h2>
-          <div className="form-floating mb-3">
-            <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-            <label htmlFor="floatingInput">Email address</label>
+    <>
+      <Navbar />
+      <div className="page">
+        <div className="info-container">
+          <div className="form-container">
+            <h2>Welcome Back</h2>
+            <div className="form-floating">
+              <label htmlFor="email">Email</label>
+              <input type="email" id="email" placeholder="Example@email.com" />
+            </div>
+            <div className="form-floating">
+              <label htmlFor="password">Password</label>
+              <input type="password" id="password" placeholder="At least 8 characters" />
+            </div>
+            <Link to="/forgot-password" className="forgot-password">Forgot Password?</Link>
+            <button type="submit" className="btn">Login</button>
+            <p className="link">
+              Don't have an account? <Link to="/register">Sign up</Link>
+            </p>
           </div>
-          <div className="form-floating mb-3">
-            <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
-            <label htmlFor="floatingPassword">Password</label>
-          </div>
-          <button type="submit" className="btn-login btn btn-primary w-100">Login</button>
-          <p className="mt-3">
-            <Link to="/register">Don't have an account? Register here!</Link>
-          </p>
+        </div>
+        <div className="image-container">
+          <img src={img1} alt="Decoration" />
         </div>
       </div>
-
-      <div className="cover-container d-flex align-items-center justify-content-center bg-primary">
-        <img src={img1} alt="Cover" />
-      </div>
-    </div>
+    </>
   );
-}
+};
 
 export default LogIn;

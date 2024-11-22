@@ -4,11 +4,9 @@ npm i react-icons-kit
 
 
 color sheet
-#ff7f50
-#ff8f66
-$ff9f7c
-#ffaf92
-#ffbfa8
-#ffcfbd
-#ffdfd3
-#ffefe9
+<color name="TwilightPine">#0b1f1f</color>
+<color name="MysticJade">#114342</color>
+<color name="SereneLagoon">#1a8287</color>
+<color name="TranquilTurquoise">#1fb0b6</color>
+<color name="PaleWave">#8fb9c3</color>
+<color name="DuskAzure">#365b73</color>
